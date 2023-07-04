@@ -5,8 +5,15 @@ sudo npm install -g pm2
 # Stop any instance of the application already running
 pm2 stop all
 # Change directory into the application folder
-cd ExampleApp
+cd testApp
 # Install dependencies
 npm install
 # Start the application with the processs name example_app using pm2
-pm2 start app.js
+pm2 start ./bin/www --name testApp -e production
+
+
+
+
+
+
+
